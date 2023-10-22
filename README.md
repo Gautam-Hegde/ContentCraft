@@ -1,7 +1,7 @@
 # ContentCraft : YouTube to Tweets 🐉
 
 ContentCraft is a web application that empowers you to seamlessly convert YouTube video content into engaging tweets. Whether you want to share video highlights, insights, or fascinating snippets from YouTube videos, ContentCraft simplifies the process for you.
-
+- 📝 Easily extract insights, highlights/summary from your favorite YouTube videos. Share them on Twitter with just a few clicks!
 ## Features 🧪
 
 - Convert YouTube video URLs into tweetable content.
