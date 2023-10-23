@@ -13,7 +13,7 @@ ContentCraft is a web application that empowers you to seamlessly convert YouTub
 
 ## Installation 👽
 
-You can run TweetCraft locally on your machine. Here are the steps to set it up using npm:
+You can run ContentCraft locally on your machine. Here are the steps to set it up using npm:
 
 - **Prerequisites**: Make sure you have Node.js and npm installed on your system. You can download them from [https://nodejs.org/](https://nodejs.org/).
 
