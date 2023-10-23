@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Button, Container, Typography, Box, Paper, Link } from '@mui/material';
+import {Fade} from "react-awesome-reveal";
 import { useNavigate } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Typed from 'typed.js';
@@ -29,7 +30,8 @@ const LandingPage = () => {
 
   return (
     <>
-      <Container>
+    <Fade>
+    <Container>
         <Paper elevation={10} style={{ padding: '2rem', marginTop: '3rem' }}>
           <Typography variant="h3" gutterBottom>
             <Box fontWeight="bold" textAlign="center">
@@ -52,10 +54,17 @@ const LandingPage = () => {
             </Button>
           </Box>
         </Paper>
-      </Container>
-      <Link href={githubUrl} style={{ position: 'absolute', bottom: '10px', left: '10px', zIndex: '2' }}>
-        <GitHubIcon style={{ fontSize: '2rem' }} />
+        <Link href={githubUrl} style={{ position: 'absolute', bottom: '10px', left: '10px', zIndex: '2' }}>
+          <div style={{backgroundColor:"white" ,width:"90vw"}}>
+            <Typography variant="body2" color="textSecondary" style={{fontSize:"1.5rem", padding:"1rem",display:"flex" ,justifyContent:"center", alignItems:"center"}}>
+              Made with ❤️ by Gautam Hegde
+              <GitHubIcon style={{ fontSize: '3rem'}} />
+            </Typography>
+          </div>
+        
       </Link>
+      </Container>
+    </Fade>
       
     </>
   );

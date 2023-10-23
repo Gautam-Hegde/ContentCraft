@@ -77,6 +77,7 @@ function LinkForm() {
               label="YouTube URL"
               variant="outlined"
               fullWidth
+              style={{ backgroundColor: 'white' }}
               value={youtubeUrl}
               onChange={handleInputChange}
             />
