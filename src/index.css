@@ -67,3 +67,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  button {
+    padding: 0.4em 1em;
+    font-size: 0.9em;
+  }
+}
