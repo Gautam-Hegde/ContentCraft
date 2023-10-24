@@ -59,7 +59,7 @@ function LinkForm() {
   };
 
   return (
-      <Box width={500}>
+      <Box >
         {showAlert && (
           <Alert
             severity="success"
@@ -75,9 +75,9 @@ function LinkForm() {
               <TextField
                 label="YouTube URL"
                 variant="outlined"
-                fullWidth
                 style={{ backgroundColor: 'white', marginBottom: "1rem" }}
                 value={youtubeUrl}
+                fullWidth
                 onChange={handleInputChange}
               />
             </Grid>

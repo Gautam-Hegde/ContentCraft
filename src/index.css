@@ -28,12 +28,13 @@ a:hover {
 }
 
 body {
-  background-image: url('../public/bg.png');
+  background-image: url('/bg.png');
   background-color: white;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   position: relative;
   margin: 0;
+  height: inherit;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -74,5 +75,11 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  body {
+    height: 120vh;
   }
 }
