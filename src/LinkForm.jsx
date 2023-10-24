@@ -77,7 +77,7 @@ function LinkForm() {
               label="YouTube URL"
               variant="outlined"
               fullWidth
-              style={{ backgroundColor: 'white' }}
+              style={{ backgroundColor: 'white' ,marginBottom:"1rem" }}
               value={youtubeUrl}
               onChange={handleInputChange}
             />
@@ -87,6 +87,7 @@ function LinkForm() {
               type="submit"
               variant="contained"
               color="primary"
+              style={{ backgroundColor: 'transparent', border: '3px solid purple',color:"purple" , margin: '0 10px' ,fontWeight:"bold" ,fontSize:"1rem" ,padding:"10px 20px" ,borderRadius:"10px" ,cursor:"pointer" ,transition:"all 0.3s ease-in-out",boxShadow:"0 0 20px 0px purple"}}
               fullWidth
               disabled={loading}
             >

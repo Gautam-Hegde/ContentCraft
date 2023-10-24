@@ -4,8 +4,6 @@ import {Fade} from "react-awesome-reveal";
 import { useNavigate } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Typed from 'typed.js';
-
-
 const LandingPage = () => {
   const navigate = useNavigate();
   const githubUrl = 'https://github.com/Gautam-Hegde';
@@ -31,20 +29,19 @@ const LandingPage = () => {
   return (
     <>
     <Fade>
-    <Container>
-        <Paper elevation={10} style={{ padding: '2rem', marginTop: '3rem' }}>
+    <Container style={{backgroundColor:"transparent" ,width:"40vw", }}>
           <Typography variant="h3" gutterBottom>
             <Box fontWeight="bold" textAlign="center">
-              <span className="tagline"></span>
+              <span className="tagline" style={{color:"black"}}></span>
             </Box>
           </Typography>
-          <Typography variant="h6" align="center" color="textSecondary">
+          <Typography variant="h6" align="center" style={{fontSize:"1.25rem",color:"black"}} >
             Elevate your content with our Video ➡ Tweet Generator with Ease! 🚀
           </Typography>
           <Box display="flex" justifyContent="center" mt={3}>
             <Button
+              style={{ backgroundColor: 'transparent', border: '3px solid purple',color:"purple" , margin: '0 10px' ,fontWeight:"bold" ,fontSize:"1rem" ,padding:"10px 20px" ,borderRadius:"10px" ,cursor:"pointer" ,transition:"all 0.3s ease-in-out",boxShadow:"0 0 20px 0px purple"}}
               variant="contained"
-              color="primary"
               size="large"
               onClick={() => {
                 navigate('/generate');
@@ -53,14 +50,7 @@ const LandingPage = () => {
               Get Started
             </Button>
           </Box>
-        </Paper>
         <Link href={githubUrl} style={{ position: 'absolute', bottom: '10px', left: '10px', zIndex: '2' }}>
-          <div style={{backgroundColor:"white" ,width:"90vw"}}>
-            <Typography variant="body2" color="textSecondary" style={{fontSize:"1.5rem", padding:"1rem",display:"flex" ,justifyContent:"center", alignItems:"center"}}>
-              Made with ❤️ by Gautam Hegde
-              <GitHubIcon style={{ fontSize: '3rem'}} />
-            </Typography>
-          </div>
         
       </Link>
       </Container>

@@ -28,7 +28,8 @@ a:hover {
 }
 
 body {
-  background-image: url('../public/Bg.jpg');
+  background-image: url('../public/bg.png');
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
