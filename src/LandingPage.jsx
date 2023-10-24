@@ -29,7 +29,7 @@ const LandingPage = () => {
   return (
     <>
     <Fade>
-    <Container style={{backgroundColor:"transparent" ,width:"40vw", }}>
+    <Container style={{backgroundColor:"transparent" ,width:"40vw", display:"flex",justifyContent:"center",alignItems:"center" ,flexDirection:"column", position:"relative" }}>
           <Typography variant="h3" gutterBottom>
             <Box fontWeight="bold" textAlign="center">
               <span className="tagline" style={{color:"black"}}></span>
