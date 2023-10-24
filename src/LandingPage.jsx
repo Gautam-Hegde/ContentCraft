@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { Button, Container, Typography, Box, Paper, Link } from '@mui/material';
+import {Fade} from "react-awesome-reveal";
 import { useNavigate } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Typed from 'typed.js';
-
-
 const LandingPage = () => {
   const navigate = useNavigate();
   const githubUrl = 'https://github.com/Gautam-Hegde';
@@ -29,20 +28,20 @@ const LandingPage = () => {
 
   return (
     <>
-      <Container>
-        <Paper elevation={10} style={{ padding: '2rem', marginTop: '3rem' }}>
+    <Fade>
+    <Container style={{backgroundColor:"transparent" ,width:"40vw", display:"flex",justifyContent:"center",alignItems:"center" ,flexDirection:"column", position:"relative" }}>
           <Typography variant="h3" gutterBottom>
             <Box fontWeight="bold" textAlign="center">
-              <span className="tagline"></span>
+              <span className="tagline" style={{color:"black"}}></span>
             </Box>
           </Typography>
-          <Typography variant="h6" align="center" color="textSecondary">
+          <Typography variant="h6" align="center" style={{fontSize:"1.25rem",color:"black"}} >
             Elevate your content with our Video ➡ Tweet Generator with Ease! 🚀
           </Typography>
           <Box display="flex" justifyContent="center" mt={3}>
             <Button
+              style={{ backgroundColor: 'transparent', border: '3px solid purple',color:"purple" , margin: '0 10px' ,fontWeight:"bold" ,fontSize:"1rem" ,padding:"10px 20px" ,borderRadius:"10px" ,cursor:"pointer" ,transition:"all 0.3s ease-in-out",boxShadow:"0 0 20px 0px purple"}}
               variant="contained"
-              color="primary"
               size="large"
               onClick={() => {
                 navigate('/generate');
@@ -51,11 +50,11 @@ const LandingPage = () => {
               Get Started
             </Button>
           </Box>
-        </Paper>
-      </Container>
-      <Link href={githubUrl} style={{ position: 'absolute', bottom: '10px', left: '10px', zIndex: '2' }}>
-        <GitHubIcon style={{ fontSize: '2rem' }} />
+        <Link href={githubUrl} style={{ position: 'absolute', bottom: '10px', left: '10px', zIndex: '2' }}>
+        
       </Link>
+      </Container>
+    </Fade>
       
     </>
   );
